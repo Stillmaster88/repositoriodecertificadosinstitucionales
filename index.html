@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificados Santoto - Facultad de Gobierno y Relaciones Internacionales</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  /* Logo del header */
+  header .logo {
+    width: 180px !important;
+    height: auto !important;
+    max-width: none !important;
+    display: inline-block;
+  }
+
+  /* Logos dentro de tarjetas de evento */
+  .event-card img {
+    width: 80%;
+    max-width: 250px; /* ajústalo si quieres más grande o más pequeño */
+    height: 220px;    /* o usa height: auto; si prefieres mantener proporciones */
+    object-fit: contain;
+  }
+</style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/44/Escudo_Universidad_Santo_Tom%C3%A1s.png">
+</head>
+<body>
+  <header>
+    <div class="logo-container"> 
+      <img src="logos/logo_santoto_bogota1.png" alt="Logo Santoto" class="logo">
+      <h1>Facultad de Gobierno y Relaciones Internacionales</h1>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contacto">Contacto</a>  
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Consulta y descarga tus certificados</h2>
+      <p>Verifica tu participación en los eventos institucionales de la Facultad.</p>
+
+      <form id="searchForm">
+        <input type="text" id="cedula" placeholder="Ingresa tu número de cédula" required>
+        <button type="submit">Buscar</button>
+      </form>
+
+      <div id="resultado"></div>
+    </div>
+  </section>
+
+  <section id="eventos" class="eventos">
+    <h2>Certificados por evento</h2>
+    <div class="event-grid">
+      <div class="event-card">
+        <img src="logos/logo_santotomun.png" alt="Modelo ONU">
+        <h3>Modelo de Naciones Unidas SantoToMUN 2025</h3>
+        <p>Descarga tu certificado del Modelo de Naciones Unidas SantoToMUN 2025.</p>
+      </div>
+      <div class="event-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Peace-symbol-pigeon.png" alt="Semana de la Paz">
+        <h3>Semana de la Paz</h3>
+        <p>Certificados de participación en las actividades de la Semana por la Paz.</p>
+      </div>
+      <div class="event-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Conference_icon.svg" alt="Foro Estudiantil">
+        <h3>Foro Estudiantil</h3>
+        <p>Reconocimiento a la participación en debates y foros de estudiantes.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <div class="footer-content">
+      <p><h5>© 2025 Universidad Santo Tomás - Facultad de Gobierno y Relaciones Internacionales</p>
+      <p>Desarrollado por 👨🏻‍💻 por Stiven Dominguez — Secretario Académico de la Facultad de Gobierno y Relaciones Internacionales</p>
+      <p>correo: secre.fagori@usta.edu.co</h5></p> 
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
